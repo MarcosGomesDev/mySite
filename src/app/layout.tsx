@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import { ThemeProvider } from "@/contexts";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -17,11 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang='pt-BR'>
       <body className={poppins.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
