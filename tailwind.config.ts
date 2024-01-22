@@ -17,6 +17,15 @@ const config: Config = {
   ],
   darkMode: "class",
   theme: {
+    screens: {
+      xs2: "100px",
+      xs: "320px",
+      sm2: "400px",
+      sm: "450px",
+      md: "768px",
+      lg: "992px",
+      container: "1200px",
+    },
     extend: {
       linearGradientColors: {
         "border-gradient": ["#E70FAA", "#00C0FD"],
@@ -67,7 +76,7 @@ const config: Config = {
             }
             return values;
           })(),
-        }
+        },
       );
 
       // Animation fill mode utilities
@@ -84,7 +93,7 @@ const config: Config = {
             backwards: "backwards",
             both: "both",
           },
-        }
+        },
       );
     }),
   ],
