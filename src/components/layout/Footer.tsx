@@ -5,16 +5,14 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className='h-6 w-full'>
+    <footer className='h-6 w-full bg-white dark:bg-primary'>
       <div className='w-full container px-[15px] mx-auto'>
         <div className='border-b-2 border-b-gray-200'>
           <div className='flex items-center justify-between'>
             <Image
               src={Logo}
               alt='logo'
-              width={120}
-              height={120}
-              className='self-end mt-8'
+              className='w-24 h-auto object-contain'
             />
             <div className='flex gap-6'>
               <p className='text-blue dark:text-gray-200'>
