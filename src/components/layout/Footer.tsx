@@ -16,8 +16,11 @@ export function Footer() {
               height={120}
               className='self-end mt-8'
             />
-            <div>
-              <ul className='flex items-center text-gray dark:text-gray-200 font-medium mr-4'>
+            <div className='flex gap-6'>
+              <p className='text-blue dark:text-gray-200'>
+                marcosgomesdev@gmail.com
+              </p>
+              <ul className='flex items-center text-blue dark:text-gray-200 font-medium mr-4'>
                 <li className='flex'>
                   <Link
                     href='https://github.com/MarcosGomesDev'
