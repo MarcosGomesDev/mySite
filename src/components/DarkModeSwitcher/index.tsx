@@ -39,14 +39,14 @@ function DarkModeSwitcher({ className }: DarkModeSwitcherProps) {
             "before:content-[''] before:w-[22px] before:h-[22px] before:transition-all before:duration-200 before:shadow-[1px_1px_3px_rgba(0,0,0,0.25)] before:absolute before:inset-y-0 before:my-auto before:rounded-full",
             {
               "bg-primary border-gray-200": darkMode,
-              "before:ml-[19px] before:bg-white border-gray": darkMode,
+              "before:ml-[20px] before:bg-white border-gray": darkMode,
             },
           ])}
         ></div>
         {darkMode ? (
-          <Moon className="inset-y-0 right-0 w-5 h-5 my-auto mr-3  text-white" />
+          <Moon className='inset-y-0 right-0 w-5 h-5 my-auto mr-3  text-white' />
         ) : (
-          <Sun className="inset-y-0 right-0 w-5 h-5 my-auto mr-3  text-darkmode-500" />
+          <Sun className='inset-y-0 right-0 w-5 h-5 my-auto mr-3  text-darkmode-500' />
         )}
       </div>
       {/* END: Dark Mode Switcher */}
