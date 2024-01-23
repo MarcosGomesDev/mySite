@@ -1,8 +1,8 @@
 <svg xmlns:mydata="http://www.w3.org/2000/svg" mydata:contrastcolor="11111f" mydata:template="Contrast"
   mydata:presentation="2.5" mydata:layouttype="undefined" mydata:specialfontid="undefined" mydata:id1="900"
   mydata:id2="769" mydata:companyname="Marcos Gomes" mydata:companytagline="MG" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 330px;"
-  viewBox="0 0 550 470">
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550" height="470"
+  viewBox="0 0 550 360" style="transform: scale(2)">
   <defs>
     <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
 
