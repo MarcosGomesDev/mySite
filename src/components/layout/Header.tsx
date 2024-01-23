@@ -16,15 +16,13 @@ export function Header() {
     <header className='flex items-center w-full h-20'>
       <div className='w-full container px-[15px] mx-auto'>
         <div>
-          <div className='flex items-center gap-14 justify-between'>
+          <div className='flex items-center justify-between'>
             <Image
               src={Logo}
               alt='logo'
-              className='self-end mt-8'
-              width={120}
-              height={120}
+              className='w-24 h-auto object-contain'
             />
-            <ul className='flex items-center gap-10 text-gray dark:text-gray-200 font-medium'>
+            <ul className='flex items-center gap-10 text-gray dark:text-gray-200 font-semibold'>
               {arrayMenu.map((item, index) => (
                 <li key={item}>
                   <Link
