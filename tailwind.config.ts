@@ -1,4 +1,3 @@
-import type { Config } from "tailwindcss";
 const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 const { parseColor } = require("tailwindcss/lib/util/color");
@@ -9,7 +8,7 @@ const toRGB = (value: any) => {
 };
 
 /** @type {import('tailwindcss').Config} */
-const config: Config = {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -40,6 +39,7 @@ const config: Config = {
         aqua: "#00C0FD",
         "gray-100": "#D9D9D9",
         "gray-200": "#A7A7A7",
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
         darkmode: {
           500: "rgb(var(--color-darkmode-500)) / <alpha-value>",
         },
@@ -56,8 +56,8 @@ const config: Config = {
         },
         // Default dark-mode colors
         ".dark": {
-          "--color-primary": "rgba(25, 25, 25, 1)",
-          "--color-darkmode-500": "rgba(54, 54, 54, 1)",
+          "--color-primary": "25, 25, 25",
+          "--color-darkmode-500": "54, 54, 54",
         },
       });
       // Animation delay utilities
@@ -98,4 +98,3 @@ const config: Config = {
     }),
   ],
 };
-export default config;
