@@ -41,7 +41,7 @@ module.exports = {
         "gray-200": "#A7A7A7",
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         darkmode: {
-          500: "rgb(var(--color-darkmode-500)) / <alpha-value>",
+          500: "rgb(var(--color-darkmode-500) / <alpha-value>)",
         },
       },
     },
