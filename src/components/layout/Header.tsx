@@ -1,23 +1,18 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import DarkModeSwitcher from "../DarkModeSwitcher";
 import { Github, Instagram, Linkedin, Menu, X } from "lucide-react";
 import Logo from "../../../public/logo.svg";
-import { twMerge } from "tailwind-merge";
 import { useState } from "react";
-
-const arrayMenu = ["Inicio", "Sobre", "Tecnologias", "Projetos", "Contato"];
+import Link from "next/link";
+import { MenuHeader } from "./Menu";
 
 export function Header() {
-  const activeStyle =
-    "text-transparent bg-clip-text bg-gradient-to-r from-[#ff0080] to-[#00C0FD]";
-
   const [nav, setNav] = useState(false);
 
   return (
-    <header className='flex items-center w-full h-20'>
-      <div className='w-full container px-[15px] mx-auto'>
+    <header className='flex items-center w-full h-20 fixed top-0 bg-white dark:bg-[#191919]'>
+      <div className='w-full container px-[15px] mx-auto '>
         <div>
           <div className='flex items-center justify-between'>
             <Image
@@ -26,20 +21,7 @@ export function Header() {
               className='w-24 h-auto object-contain'
             />
             <ul className='hidden lg:flex items-center gap-10 text-gray dark:text-gray-200 font-semibold'>
-              {arrayMenu.map((item, index) => (
-                <li key={item}>
-                  <Link
-                    href='#'
-                    className={twMerge([
-                      `gap-3 hover:opacity-80`,
-                      `${index === 0 ? activeStyle : ""}`,
-                    ])}
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-
+              <MenuHeader />
               <li className='flex gap-4'>
                 <Link
                   href='https://github.com/MarcosGomesDev'
@@ -79,20 +61,8 @@ export function Header() {
             </div>
 
             {nav && (
-              <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white dark:bg-black text-gray-500 text-2xl'>
-                {arrayMenu.map((item, index) => (
-                  <li key={item} className='mb-2'>
-                    <Link
-                      href='#'
-                      className={twMerge([
-                        `gap-3 hover:opacity-80`,
-                        `${index === 0 ? activeStyle : ""}`,
-                      ])}
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
+              <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white dark:bg-[#191919] text-gray-500 text-2xl'>
+                <MenuHeader onClick={() => setNav(!nav)} />
                 <li className='flex gap-4 mt-6'>
                   <Link
                     href='https://github.com/MarcosGomesDev'
