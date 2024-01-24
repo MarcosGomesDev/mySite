@@ -23,7 +23,11 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className='md:w-80 h-[34rem] bg-white dark:bg-[#363636] rounded-xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.4)]'>
-      <Image src={image} alt='hero' className='w-full h-auto rounded-t-xl' />
+      <Image
+        src={image}
+        alt='hero'
+        className='w-full h-auto rounded-t-xl border-b-2 border-opacity-30 border-gray'
+      />
       <div className='px-4 flex flex-col items-center h-full gap-7  text-gray dark:text-[#ccc]'>
         <p className='text-2xl mt-6 font-medium !text-black dark:!text-[#ccc]'>
           {name}
