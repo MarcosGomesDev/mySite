@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Logo from "../../../public/logo.svg";
 import Link from "next/link";
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className='h-6 w-full bg-white dark:bg-primary'>
-      <div className='w-full container px-[15px] mx-auto'>
+      <div className='w-full container px-[15px] mx-auto pb-12'>
         <div className='border-b-2 border-b-gray-200'>
           <div className='flex items-center justify-between'>
             <Image
@@ -15,11 +15,18 @@ export function Footer() {
               className='w-24 h-auto object-contain'
             />
             <div className='flex gap-6'>
-              <p className='text-blue dark:text-gray-200'>
+              <p className='hidden md:flex text-blue dark:text-gray-200'>
                 marcosgomesdev@gmail.com
               </p>
               <ul className='flex items-center text-blue dark:text-gray-200 font-medium mr-4'>
                 <li className='flex'>
+                  <Link
+                    href='https://github.com/MarcosGomesDev'
+                    target='_blank'
+                    className='gap-3 mr-2 hover:opacity-80 md:hidden flex'
+                  >
+                    <Mail size={24} />
+                  </Link>
                   <Link
                     href='https://github.com/MarcosGomesDev'
                     target='_blank'
