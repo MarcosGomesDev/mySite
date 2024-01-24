@@ -3,7 +3,7 @@ import Image from "next/image";
 import DarkModeSwitcher from "../DarkModeSwitcher";
 import { Github, Instagram, Linkedin, Menu, X } from "lucide-react";
 import Logo from "../../../public/logo.svg";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
 import { MenuHeader } from "./Menu";
 
@@ -21,7 +21,9 @@ export function Header() {
               className='w-24 h-auto object-contain'
             />
             <ul className='hidden lg:flex items-center gap-10 text-gray dark:text-gray-200 font-semibold'>
-              <MenuHeader />
+              <Suspense>
+                <MenuHeader />
+              </Suspense>
               <li className='flex gap-4'>
                 <Link
                   href='https://github.com/MarcosGomesDev'
