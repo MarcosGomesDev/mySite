@@ -44,7 +44,7 @@ function DarkModeSwitcher({ className }: DarkModeSwitcherProps) {
           ])}
         ></div>
         {darkMode ? (
-          <Moon className='inset-y-0 right-0 w-5 h-5 my-auto mr-3  text-white' />
+          <Moon className='inset-y-0 right-0 w-5 h-5 my-auto mr-3  text-gray-200' />
         ) : (
           <Sun className='inset-y-0 right-0 w-5 h-5 my-auto mr-3  text-darkmode-500' />
         )}
