@@ -9,10 +9,10 @@ const arrayMenu = [
     name: "Início",
     ref: "home",
   },
-  {
-    name: "Sobre",
-    ref: "about",
-  },
+  // {
+  //   name: "Sobre",
+  //   ref: "about",
+  // },
   {
     name: "Tecnologias",
     ref: "tech",
@@ -51,7 +51,6 @@ export function MenuHeader({ onClick }: MenuProps) {
             onClick={() => {
               onClick && onClick();
               setActiveMenu(index);
-              router.push(`${pathname}?menu=${index}`);
             }}
             smooth={true}
             duration={100}
