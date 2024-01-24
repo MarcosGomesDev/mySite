@@ -22,7 +22,7 @@ export function Header() {
               alt='logo'
               className='w-24 h-auto object-contain'
             />
-            <ul className='flex items-center gap-10 text-gray dark:text-gray-200 font-semibold'>
+            <ul className='hidden lg:flex items-center gap-10 text-gray dark:text-gray-200 font-semibold '>
               {arrayMenu.map((item, index) => (
                 <li key={item}>
                   <Link
