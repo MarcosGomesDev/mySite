@@ -6,7 +6,7 @@ import { projectsArray } from "./projects";
 export function SectionProjects() {
   return (
     <Element name='projects' className='element'>
-      <section className='flex w-full min-h-[704px] justify-center'>
+      <section className='flex w-full min-h-[704px] justify-center  pt-4'>
         <div className='w-full container py-20 mx-auto flex justify-center items-start'>
           <div className='text-center flex flex-col'>
             <h3 className='text-5xl font-bold'>Projetos</h3>

@@ -8,7 +8,7 @@ export const SectionHero = () => {
     "text-transparent bg-clip-text bg-gradient-to-r from-[#13B0F5] to-[#E70FAA]";
   return (
     <Element name='home' className='element'>
-      <section className='flex items-center w-full h-[704px]'>
+      <section className='flex items-center w-full h-[704px] pt-4'>
         <div className='w-full container mx-auto flex justify-center lg:justify-around items-center flex-col lg:flex-row text-center'>
           <div className='mb-6 lg:mb-0'>
             <h3 className='text-4xl text-blue dark:text-gray-100 font-bold leading-tight'>
