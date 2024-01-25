@@ -1,5 +1,5 @@
 "use client";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useQueryState } from "nuqs";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { twMerge } from "tailwind-merge";
@@ -35,10 +35,7 @@ export function MenuHeader({ onClick }: MenuProps) {
   const activeStyle =
     "text-transparent bg-clip-text bg-gradient-to-r from-[#ff0080] to-[#00C0FD]";
 
-  const menu = useSearchParams().get("menu") ?? "0";
-
-  const pathname = usePathname();
-  const router = useRouter();
+  const [menu, setMenu] = useQueryState("active");
 
   const [activeMenu, setActiveMenu] = useState(Number(menu));
 
@@ -51,11 +48,12 @@ export function MenuHeader({ onClick }: MenuProps) {
             onClick={() => {
               onClick && onClick();
               setActiveMenu(index);
+              setMenu(index.toString());
             }}
             smooth={true}
             duration={100}
             className={twMerge([
-              `gap-3 hover:opacity-80 cursor-pointer`,
+              `gap-3 hover:opacity-80 cursor-pointer leading-relaxed`,
               `${activeMenu === index ? activeStyle : ""}`,
             ])}
           >
