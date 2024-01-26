@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "@/components";
 import { ThemeProvider } from "@/contexts";
-import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +14,21 @@ export const metadata: Metadata = {
   description: "Desenvolvedor Fullstack",
   icons: {
     icon: "/logo.svg",
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://marcosgomesdev.netlify.app/",
+    title: "Marcos Gomes | Desenvolvedor Fullstack",
+    description: "Desenvolvedor Fullstack",
+    images: [
+      {
+        url: "/web.png",
+        width: 1200,
+        height: 630,
+        alt: "Marcos Gomes",
+      },
+    ],
   },
 };
 
