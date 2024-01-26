@@ -88,7 +88,7 @@ export function Header() {
                     <Instagram size={24} />
                   </Link>
                 </li>
-                <li className='mt-5'>
+                <li className='mt-10'>
                   <DarkModeSwitcher />
                 </li>
               </ul>
