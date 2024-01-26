@@ -13,7 +13,7 @@ export const SectionTech = () => {
             <p className='mt-6 text-3xl font-light text-gray-200'>
               Tecnologias que trabalhei recentemente
             </p>
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-24 gap-8 justify-center'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-24 gap-8 justify-center px-4'>
               {logos.map((logo) => (
                 <Image
                   key={logo.name}
