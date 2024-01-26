@@ -24,7 +24,7 @@ export function Footer() {
                 <ul className='flex items-center text-blue dark:text-gray-200 font-medium mr-4'>
                   <li className='flex'>
                     <Link
-                      href='https://github.com/MarcosGomesDev'
+                      href='mailto:marcosgomesdev@gmail.com'
                       target='_blank'
                       className='gap-3 mr-2 hover:opacity-80 md:hidden flex'
                     >
