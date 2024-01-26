@@ -9,10 +9,10 @@ const arrayMenu = [
     name: "Início",
     ref: "home",
   },
-  // {
-  //   name: "Sobre",
-  //   ref: "about",
-  // },
+  {
+    name: "Sobre",
+    ref: "about",
+  },
   {
     name: "Tecnologias",
     ref: "tech",
