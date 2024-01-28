@@ -49,13 +49,13 @@ export function ProjectCard({
         <div className='flex w-full justify-between px-4 !text-black dark:!text-[#ccc]'>
           <div className='flex gap-2 text-sm items-center'>
             <ArrowUpRightFromSquare size={18} />
-            <Link href={link} className='hover:underline'>
+            <Link href={link} target='_blank' className='hover:underline'>
               Ver Projeto
             </Link>
           </div>
           <div className='flex gap-2 text-sm items-center'>
             <Github size={18} />
-            <Link href={code} className='hover:underline'>
+            <Link href={code} target='_blank' className='hover:underline'>
               Ver código
             </Link>
           </div>
