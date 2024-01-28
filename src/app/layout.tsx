@@ -12,23 +12,13 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Marcos Gomes | Desenvolvedor Fullstack",
   description: "Desenvolvedor Fullstack",
-  icons: {
-    icon: "/logo.svg",
-  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "https://marcosgomesdev.netlify.app/",
     title: "Marcos Gomes | Desenvolvedor Fullstack",
     description: "Desenvolvedor Fullstack",
-    images: [
-      {
-        url: "/web.png",
-        width: 1200,
-        height: 630,
-        alt: "Marcos Gomes",
-      },
-    ],
+    images: "https://marcosgomesdev.netlify.app/web.png",
   },
 };
 
