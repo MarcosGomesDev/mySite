@@ -9,7 +9,7 @@ export function SectionAbout() {
         <div className='w-full container py-20 mx-auto flex justify-center items-start'>
           <div className='text-center flex flex-col'>
             <h3 className='text-5xl font-bold'>Sobre</h3>
-            <p className='text-gray-200 text-2xl text-center leading-relaxed mt-16'>
+            <p className='text-gray-200 text-pretty text-2xl md:text-center mt-16 px-2 md:px-24 !leading-relaxed'>
               Desenvolvedor Full Stack, trabalhando com as tecnologias mais
               atuais. Proficiente na criação e implementação de soluções
               tecnológicas inovadoras, participando todo o ciclo de

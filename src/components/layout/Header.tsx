@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header className='flex items-center w-full h-20 fixed top-0 bg-white dark:bg-[#191919]'>
-      <div className='w-full container px-[15px] mx-auto '>
+      <div className='w-full container px-[15px] mx-auto'>
         <div>
           <div className='flex items-center justify-between'>
             <Image
