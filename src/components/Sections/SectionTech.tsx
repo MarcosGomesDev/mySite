@@ -20,7 +20,7 @@ export const SectionTech = () => {
                   src={logo.src}
                   alt={logo.name}
                   title={logo.name}
-                  className='object-contain aspect-[4/3] w-32 h-auto ml-6'
+                  className='object-contain aspect-[4/3] w-32 h-auto sm:ml-6'
                 />
               ))}
             </div>
