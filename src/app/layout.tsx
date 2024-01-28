@@ -10,6 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://marcosgomesdev.netlify.app"),
   title: "Marcos Gomes | Desenvolvedor Fullstack",
   description: "Desenvolvedor Fullstack",
   openGraph: {
@@ -20,6 +21,11 @@ export const metadata: Metadata = {
     description: "Desenvolvedor Fullstack",
     images: "https://marcosgomesdev.netlify.app/web.png",
   },
+  authors: [
+    {
+      name: "Marcos Gomes",
+    },
+  ],
 };
 
 export default function RootLayout({
