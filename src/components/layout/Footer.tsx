@@ -15,6 +15,7 @@ export function Footer() {
               <Image
                 src={Logo}
                 alt='logo'
+                priority
                 className='w-24 h-auto object-contain'
               />
               <div className='flex gap-6'>

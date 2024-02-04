@@ -20,6 +20,7 @@ export const SectionTech = () => {
                   src={logo.src}
                   alt={logo.name}
                   title={logo.name}
+                  priority
                   className='object-contain aspect-[4/3] w-32 h-auto sm:ml-6'
                 />
               ))}

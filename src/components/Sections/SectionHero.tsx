@@ -19,7 +19,12 @@ export const SectionHero = () => {
           </div>
           <div className='rounded-full flex items-center justify-center w-72  bg-gradient-b-border-gradient h-72'>
             <div className='bg-white dark:bg-[#191919]  inset-0 w-[17rem] h-[17rem] rounded-full flex items-center justify-center'>
-              <Image src={Person} alt='hero' className='rounded-full' />
+              <Image
+                src={Person}
+                alt='hero'
+                className='rounded-full'
+                priority
+              />
             </div>
           </div>
         </div>

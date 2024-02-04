@@ -16,11 +16,13 @@ export default function NotFound() {
               className='w-[450px] h-48 lg:h-auto hidden dark:flex'
               width={450}
               src={DarkError}
+              priority
             />
             <Image
               alt='Página não encontrada'
               className='w-[450px] h-48 lg:h-auto dark:hidden'
               src={LightError}
+              priority
             />
           </div>
           <div className='mt-10 text-blue dark:text-white lg:mt-0'>

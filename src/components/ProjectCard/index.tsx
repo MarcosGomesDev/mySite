@@ -26,6 +26,7 @@ export function ProjectCard({
       <Image
         src={image}
         alt='hero'
+        priority
         className='w-full h-auto rounded-t-xl border-b-2 border-opacity-30 border-gray'
       />
       <div className='px-4 flex flex-col items-center h-full gap-7  text-gray dark:text-[#ccc]'>

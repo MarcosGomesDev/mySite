@@ -18,6 +18,7 @@ export function Header() {
             <Image
               src={Logo}
               alt='logo'
+              priority
               className='w-24 h-auto object-contain'
             />
             <ul className='hidden lg:flex items-center gap-10 text-gray dark:text-gray-200 font-semibold'>
