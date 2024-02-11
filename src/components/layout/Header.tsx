@@ -2,7 +2,6 @@
 import Image from "next/image";
 import DarkModeSwitcher from "../DarkModeSwitcher";
 import { Github, Instagram, Linkedin, Menu, X } from "lucide-react";
-import Logo from "../../../public/logo.svg";
 import { Suspense, useState } from "react";
 import Link from "next/link";
 import { MenuHeader } from "./Menu";
@@ -11,13 +10,15 @@ export function Header() {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className='flex items-center w-full h-20 fixed top-0 bg-white dark:bg-[#191919]'>
+    <header className='flex items-center w-full h-20 fixed top-0 bg-white dark:bg-[#191919] z-50'>
       <div className='w-full container px-[15px] mx-auto'>
         <div>
           <div className='flex items-center justify-between'>
             <Image
-              src={Logo}
+              src='https://res.cloudinary.com/gomesdev/image/upload/v1707685275/marcosgomes/logo_zvfe7c.svg'
               alt='logo'
+              width={96}
+              height={82}
               priority
               className='w-24 h-auto object-contain'
             />

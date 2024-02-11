@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     url: "https://marcosgomesdev.netlify.app/",
     title: "Marcos Gomes | Desenvolvedor Fullstack",
     description: "Desenvolvedor Fullstack",
-    images: "https://marcosgomesdev.netlify.app/web.png",
+    images:
+      "https://res.cloudinary.com/gomesdev/image/upload/v1707685272/marcosgomes/web_i7uppn.png",
   },
   authors: [
     {

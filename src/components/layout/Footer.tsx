@@ -13,10 +13,11 @@ export function Footer() {
           <div className='border-b-2 border-b-gray-200'>
             <div className='flex items-center justify-between'>
               <Image
-                src={Logo}
+                src='https://res.cloudinary.com/gomesdev/image/upload/v1707685275/marcosgomes/logo_zvfe7c.svg'
                 alt='logo'
+                width={96}
+                height={82}
                 priority
-                className='w-24 h-auto object-contain'
               />
               <div className='flex gap-6'>
                 <p className='hidden md:flex text-blue dark:text-gray-200'>

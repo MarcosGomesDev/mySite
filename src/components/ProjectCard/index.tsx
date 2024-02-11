@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import File from "../../../public/site-mario.png";
 import Link from "next/link";
 import { ArrowUpRightFromSquare, Github } from "lucide-react";
 import React from "react";
@@ -10,7 +9,7 @@ interface ProjectCardProps {
   technologies: string[];
   link: string;
   code: string;
-  image: StaticImageData;
+  image: string;
 }
 
 export function ProjectCard({
@@ -22,22 +21,22 @@ export function ProjectCard({
   code,
 }: ProjectCardProps) {
   return (
-    <div className='md:w-80 h-[34rem] bg-white dark:bg-[#363636] rounded-xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.4)]'>
+    <div className='md:w-80 h-[34rem] bg-white dark:bg-[#363636] rounded-xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.4)] relative z-0 overflow-hidden'>
       <Image
         src={image}
         alt='hero'
         priority
-        className='w-full h-auto rounded-t-xl border-b-2 border-opacity-30 border-gray'
+        width={320}
+        height={202}
+        className='w-full min-h-[202px] border-b-2 border-opacity-30 border-gray'
       />
-      <div className='px-4 flex flex-col items-center h-full gap-7  text-gray dark:text-[#ccc]'>
+      <div className='px-4 space-y-6 text-left text-gray dark:text-[#ccc]'>
         <p className='text-2xl mt-6 font-medium !text-black dark:!text-[#ccc]'>
           {name}
         </p>
-        <p className='text-base leading-6 font-light text-left'>
-          {description}
-        </p>
-        <p className='text-sm font-medium text-blue dark:!text-[#ccc]'>
-          Tecnologias:{" "}
+        <p className='text-sm leading-6 font-light'>{description}</p>
+        <p className='text-sm text-blue dark:!text-[#ccc]'>
+          <span className='font-medium'>Tecnologias:</span>{" "}
           <span className='font-light'>
             {technologies.map((tech, index) => (
               <React.Fragment key={index}>
@@ -47,6 +46,8 @@ export function ProjectCard({
             ))}
           </span>
         </p>
+      </div>
+      <div className='absolute w-full bottom-6'>
         <div className='flex w-full justify-between px-4 !text-black dark:!text-[#ccc]'>
           <div className='flex gap-2 text-sm items-center'>
             <ArrowUpRightFromSquare size={18} />

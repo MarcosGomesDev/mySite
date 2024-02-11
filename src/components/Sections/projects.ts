@@ -1,31 +1,35 @@
-import Mario from "../../../public/site-mario.png";
-import List from "../../../public/site-list.png";
-import Waiter from "../../../public/site-waiter.webp";
-
 export const projectsArray = [
   {
     name: "Mário Guitarman",
     description:
       "Site para o músico Mário Guitarman, com informações sobre o artista, agenda de shows e contato.",
-    image: Mario,
+    image:
+      "https://res.cloudinary.com/gomesdev/image/upload/v1707685272/marcosgomes/projects/site-mario_jtyaih.png",
     link: "https://marioguitarman.netlify.app/",
     github: "https://github.com/MarcosGomesDev/marioguitarman",
     techs: ["React", "Vite", "TypeScript", "Tailwind CSS"],
   },
   {
-    name: "Lista de Tarefas",
+    name: "Nota Rápido",
     description:
-      "Lista de tarefas com possibilidade de adicionar, remover e marcar como concluída.",
-    image: List,
-    link: "https://my-tasks-to-do.netlify.app/",
-    github: "https://github.com/MarcosGomesDev/ToDoList",
-    techs: ["React", "Vite", "TypeScript", "Styled Components"],
+      "Bloco de notas para anotações rápidas, com possibilidade de adicionar, remover e podendo criar com texto ou com voz.",
+    image:
+      "https://res.cloudinary.com/gomesdev/image/upload/v1707685277/marcosgomes/projects/nota-rapido_pqr5ns.png",
+    link: "https://nota-rapido.vercel.app/",
+    github: "https://github.com/MarcosGomesDev/NotaRapido",
+    techs: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS, local storage, Speech Recognition API",
+    ],
   },
   {
     name: "Waiter App",
     description:
-      "Site para controle de pedidos de um restaurante, com possibilidade de adicionar, remover e marcar como concluído.",
-    image: Waiter,
+      "Controle de pedidos de um restaurante, com possibilidade de adicionar, remover e marcar como concluído.",
+    image:
+      "https://res.cloudinary.com/gomesdev/image/upload/v1707685271/marcosgomes/projects/site-waiter_up8yt2.webp",
     link: "https://web-waiter.netlify.app/",
     github: "https://github.com/MarcosGomesDev/WaiterWeb",
     techs: ["React", "Vite", "TypeScript", "Styled Components"],

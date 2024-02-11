@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Person from "../../../public/perfil.jpg";
 import { Element } from "react-scroll";
 
 export const SectionHero = () => {
@@ -20,9 +19,11 @@ export const SectionHero = () => {
           <div className='rounded-full flex items-center justify-center w-72  bg-gradient-b-border-gradient h-72'>
             <div className='bg-white dark:bg-[#191919]  inset-0 w-[17rem] h-[17rem] rounded-full flex items-center justify-center'>
               <Image
-                src={Person}
+                src='https://res.cloudinary.com/gomesdev/image/upload/v1707685277/marcosgomes/perfil_bilhhr.jpg'
                 alt='hero'
                 className='rounded-full'
+                width={300}
+                height={300}
                 priority
               />
             </div>
