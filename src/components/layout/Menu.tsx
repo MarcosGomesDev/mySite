@@ -1,5 +1,4 @@
-"use client";
-import { useQueryState } from "nuqs";
+// "use client";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { twMerge } from "tailwind-merge";
@@ -35,9 +34,27 @@ export function MenuHeader({ onClick }: MenuProps) {
   const activeStyle =
     "text-transparent bg-clip-text bg-gradient-to-r from-[#ff0080] to-[#00C0FD]";
 
-  const [menu, setMenu] = useQueryState("active");
+  const [activeMenu, setCurrentMenu] = useState<string>(() => {
+    const url = new URL(window.location.toString());
 
-  const [activeMenu, setActiveMenu] = useState(Number(menu));
+    if (url.searchParams.has("section")) {
+      const menu = url.searchParams.get("section")?.replace("section", "");
+
+      return menu ?? "home";
+    }
+
+    return "home";
+  });
+
+  function handleChangeActiveMenu(menu: string) {
+    const url = new URL(window.location.toString());
+
+    url.searchParams.set("section", menu);
+
+    window.history.pushState({}, "", url);
+
+    setCurrentMenu(menu);
+  }
 
   return (
     <>
@@ -47,14 +64,13 @@ export function MenuHeader({ onClick }: MenuProps) {
             to={item.ref}
             onClick={() => {
               onClick && onClick();
-              setActiveMenu(index);
-              setMenu(index.toString());
+              handleChangeActiveMenu(item.ref);
             }}
             smooth={true}
             duration={100}
             className={twMerge([
               `gap-3 hover:opacity-80 cursor-pointer leading-relaxed`,
-              `${activeMenu === index ? activeStyle : ""}`,
+              `${activeMenu === item.ref ? activeStyle : ""}`,
             ])}
           >
             {item.name}

@@ -1,8 +1,8 @@
+import { Footer, Header } from "@/components";
+import { ThemeProvider } from "@/contexts";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { Footer, Header } from "@/components";
-import { ThemeProvider } from "@/contexts";
 
 const poppins = Poppins({
   subsets: ["latin"],
