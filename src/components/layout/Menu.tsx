@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { twMerge } from "tailwind-merge";
@@ -35,6 +35,7 @@ export function MenuHeader({ onClick }: MenuProps) {
     "text-transparent bg-clip-text bg-gradient-to-r from-[#ff0080] to-[#00C0FD]";
 
   const [activeMenu, setCurrentMenu] = useState<string>(() => {
+    if (typeof window === "undefined") return "home";
     const url = new URL(window.location.toString());
 
     if (url.searchParams.has("section")) {
