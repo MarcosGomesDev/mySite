@@ -10,7 +10,7 @@ export function SectionAbout() {
           <div className='text-center flex flex-col'>
             <h3 className='text-3xl md:text-5xl font-bold'>Sobre</h3>
             <p className='text-gray-200 text-pretty text-lg md:text-2xl md:text-center mt-8 md:mt-16 px-2 md:px-24 !leading-relaxed'>
-              Desenvolvedor Full Stack, trabalhando com as tecnologias mais
+              Engenheiro de software, trabalhando com as tecnologias mais
               atuais. Proficiente na criação e implementação de soluções
               tecnológicas inovadoras, participando todo o ciclo de
               desenvolvimento de software. Comprometido com a entrega de
